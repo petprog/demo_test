@@ -103,7 +103,7 @@ class _DashboardState extends State<Dashboard> {
             height: 10,
           ),
           SizedBox(
-            height: 180,
+            height: MediaQuery.of(context).size.height * 0.195,
             child: Scrollbar(
               controller: _scrollController,
               thumbVisibility: true,

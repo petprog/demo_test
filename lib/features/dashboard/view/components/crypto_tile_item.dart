@@ -26,9 +26,9 @@ class CryptoTileItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            padding: const EdgeInsets.all(10),
-            width: 45,
-            height: 45,
+            padding: const EdgeInsets.all(8),
+            width: 40,
+            height: 40,
             decoration: BoxDecoration(
               color: _containerColorType(item.type).withOpacity(0.2),
               borderRadius: const BorderRadius.all(

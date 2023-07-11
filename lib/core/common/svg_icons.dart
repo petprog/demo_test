@@ -50,21 +50,21 @@ class SvgIcons {
   static Widget bitcoinIcon() {
     return SvgIcon(
       assetName: AssetConstants.bitcoin,
-      size: 24,
+      size: 22,
     );
   }
 
   static Widget ethereumIcon() {
     return SvgIcon(
       assetName: AssetConstants.ethereum,
-      size: 24,
+      size: 22,
     );
   }
 
   static Widget bnbIcon() {
     return SvgIcon(
       assetName: AssetConstants.bnb,
-      size: 24,
+      size: 22,
     );
   }
 }

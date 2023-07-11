@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metrdev_mobile_test/core/utils/asset_constants.dart';
+import 'package:metrdev_mobile_test/core/utils/utility.dart';
 
 import '../../../../core/common/svg_icons.dart';
 import '../../../../core/theme/styles.dart';
@@ -9,11 +10,12 @@ class WalletCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Utility.debugPrint(MediaQuery.of(context).size.height);
     return ClipRRect(
       borderRadius: const BorderRadius.all(Radius.circular(30)),
       child: SizedBox(
         width: double.infinity,
-        height: 210,
+        height: MediaQuery.of(context).size.height * 0.22,
         child: Stack(
           children: [
             Positioned.fill(
@@ -88,7 +90,7 @@ class WalletCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 5,
+                          height: 2,
                         ),
                         Text(
                           "\$ 12,480.00",
