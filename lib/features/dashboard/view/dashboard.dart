@@ -103,7 +103,7 @@ class _DashboardState extends State<Dashboard> {
             height: 10,
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.195,
+            height: MediaQuery.of(context).size.height * 0.19,
             child: Scrollbar(
               controller: _scrollController,
               thumbVisibility: true,
@@ -111,7 +111,7 @@ class _DashboardState extends State<Dashboard> {
               scrollbarOrientation: ScrollbarOrientation.bottom,
               child: Padding(
                 padding: const EdgeInsets.only(
-                  bottom: 20,
+                  bottom: 16,
                 ),
                 child: ListView.builder(
                   controller: _scrollController,
@@ -127,7 +127,7 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
           const SizedBox(
-            height: 16,
+            height: 8,
           ),
           SizedBox(
             width: double.infinity,

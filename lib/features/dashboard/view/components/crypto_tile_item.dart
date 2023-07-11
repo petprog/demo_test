@@ -26,7 +26,7 @@ class CryptoTileItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(10),
             width: 40,
             height: 40,
             decoration: BoxDecoration(
@@ -51,7 +51,7 @@ class CryptoTileItem extends StatelessWidget {
               Text(
                 "${item.percent} %",
                 style: kWhiteText15w600Style.copyWith(
-                  fontSize: 25,
+                  fontSize: 23,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'e-UkraineHead',
                 ),
