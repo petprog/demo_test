@@ -21,3 +21,9 @@ extension IntExtension on int {
     }
   }
 }
+
+extension StringExtention on String? {
+  bool get isNullOrEmpty {
+    return this == null || (toString()).isEmpty || this == "null";
+  }
+}

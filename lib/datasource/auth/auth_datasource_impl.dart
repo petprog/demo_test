@@ -21,6 +21,10 @@ class AuthDatasourceImpl implements AuthDatasource {
         final data = json.decode(res.body);
         Utility.debugPrint(data);
         result = data['message'] == "success";
+        if (!(data['message'] == "success")) {
+          final data = json.decode(res.body);
+          throw Exception(data['message']);
+        }
       } else {
         final data = json.decode(res.body);
         throw Exception(data['message']);
